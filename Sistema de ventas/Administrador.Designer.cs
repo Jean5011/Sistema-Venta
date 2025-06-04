@@ -33,15 +33,15 @@ namespace Sistema_de_ventas
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lAdminCodigo = new System.Windows.Forms.Label();
+            this.lAdminNombre = new System.Windows.Forms.Label();
+            this.lAdminUser = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.AdminImagen = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AdminImagen)).BeginInit();
             this.SuspendLayout();
             // 
             // button3
@@ -74,41 +74,41 @@ namespace Sistema_de_ventas
             this.button1.Text = "Principal";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // lAdminCodigo
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(539, 183);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(246, 28);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "--------------------------";
+            this.lAdminCodigo.AutoSize = true;
+            this.lAdminCodigo.BackColor = System.Drawing.Color.Transparent;
+            this.lAdminCodigo.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lAdminCodigo.ForeColor = System.Drawing.Color.White;
+            this.lAdminCodigo.Location = new System.Drawing.Point(539, 183);
+            this.lAdminCodigo.Name = "lAdminCodigo";
+            this.lAdminCodigo.Size = new System.Drawing.Size(246, 28);
+            this.lAdminCodigo.TabIndex = 16;
+            this.lAdminCodigo.Text = "--------------------------";
             // 
-            // label5
+            // lAdminNombre
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(539, 143);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(246, 28);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "--------------------------";
+            this.lAdminNombre.AutoSize = true;
+            this.lAdminNombre.BackColor = System.Drawing.Color.Transparent;
+            this.lAdminNombre.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lAdminNombre.ForeColor = System.Drawing.Color.White;
+            this.lAdminNombre.Location = new System.Drawing.Point(539, 143);
+            this.lAdminNombre.Name = "lAdminNombre";
+            this.lAdminNombre.Size = new System.Drawing.Size(246, 28);
+            this.lAdminNombre.TabIndex = 15;
+            this.lAdminNombre.Text = "--------------------------";
             // 
-            // label4
+            // lAdminUser
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(539, 106);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(246, 28);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "--------------------------";
+            this.lAdminUser.AutoSize = true;
+            this.lAdminUser.BackColor = System.Drawing.Color.Transparent;
+            this.lAdminUser.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lAdminUser.ForeColor = System.Drawing.Color.White;
+            this.lAdminUser.Location = new System.Drawing.Point(539, 106);
+            this.lAdminUser.Name = "lAdminUser";
+            this.lAdminUser.Size = new System.Drawing.Size(246, 28);
+            this.lAdminUser.TabIndex = 14;
+            this.lAdminUser.Text = "--------------------------";
             // 
             // label3
             // 
@@ -146,16 +146,17 @@ namespace Sistema_de_ventas
             this.label1.TabIndex = 11;
             this.label1.Text = "Administrador:";
             // 
-            // pictureBox1
+            // AdminImagen
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(128, 74);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(203, 181);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
+            this.AdminImagen.BackColor = System.Drawing.Color.Transparent;
+            this.AdminImagen.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdminImagen.BackgroundImage")));
+            this.AdminImagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.AdminImagen.Location = new System.Drawing.Point(128, 74);
+            this.AdminImagen.Name = "AdminImagen";
+            this.AdminImagen.Size = new System.Drawing.Size(203, 181);
+            this.AdminImagen.TabIndex = 10;
+            this.AdminImagen.TabStop = false;
+            this.AdminImagen.Click += new System.EventHandler(this.AdminImagen_Click);
             // 
             // button4
             // 
@@ -171,24 +172,25 @@ namespace Sistema_de_ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Sistema_de_ventas.Properties.Resources.descarga__1_;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(839, 558);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lAdminCodigo);
+            this.Controls.Add(this.lAdminNombre);
+            this.Controls.Add(this.lAdminUser);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.AdminImagen);
             this.Name = "Administrador";
             this.Text = "Administrador";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Administrador_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.Administrador_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.AdminImagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,13 +201,13 @@ namespace Sistema_de_ventas
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lAdminCodigo;
+        private System.Windows.Forms.Label lAdminNombre;
+        private System.Windows.Forms.Label lAdminUser;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox AdminImagen;
         private System.Windows.Forms.Button button4;
     }
 }

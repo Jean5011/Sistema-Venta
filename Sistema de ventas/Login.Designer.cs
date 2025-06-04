@@ -36,18 +36,16 @@ namespace Sistema_de_ventas
             this.textPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnInicial
             // 
             this.btnInicial.BackColor = System.Drawing.Color.White;
             this.btnInicial.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInicial.Location = new System.Drawing.Point(177, 463);
+            this.btnInicial.Location = new System.Drawing.Point(224, 447);
             this.btnInicial.Name = "btnInicial";
             this.btnInicial.Size = new System.Drawing.Size(164, 33);
-            this.btnInicial.TabIndex = 0;
+            this.btnInicial.TabIndex = 2;
             this.btnInicial.Text = "Iniciar sesion";
             this.btnInicial.UseVisualStyleBackColor = false;
             this.btnInicial.Click += new System.EventHandler(this.btnInicial_Click);
@@ -56,7 +54,7 @@ namespace Sistema_de_ventas
             // 
             this.btnSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSalir.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(532, 463);
+            this.btnSalir.Location = new System.Drawing.Point(508, 447);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(164, 33);
             this.btnSalir.TabIndex = 1;
@@ -70,10 +68,11 @@ namespace Sistema_de_ventas
             this.textUsuario.BackColor = System.Drawing.Color.White;
             this.textUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textUsuario.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textUsuario.Location = new System.Drawing.Point(407, 301);
+            this.textUsuario.Location = new System.Drawing.Point(349, 194);
             this.textUsuario.Name = "textUsuario";
             this.textUsuario.Size = new System.Drawing.Size(206, 35);
-            this.textUsuario.TabIndex = 2;
+            this.textUsuario.TabIndex = 0;
+            this.textUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textPassword
             // 
@@ -81,10 +80,11 @@ namespace Sistema_de_ventas
             this.textPassword.BackColor = System.Drawing.Color.White;
             this.textPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textPassword.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textPassword.Location = new System.Drawing.Point(407, 365);
+            this.textPassword.Location = new System.Drawing.Point(349, 319);
             this.textPassword.Name = "textPassword";
             this.textPassword.Size = new System.Drawing.Size(206, 35);
-            this.textPassword.TabIndex = 3;
+            this.textPassword.TabIndex = 1;
+            this.textPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
@@ -93,7 +93,7 @@ namespace Sistema_de_ventas
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(271, 303);
+            this.label1.Location = new System.Drawing.Point(402, 137);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 28);
             this.label1.TabIndex = 4;
@@ -106,31 +106,20 @@ namespace Sistema_de_ventas
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(258, 372);
+            this.label2.Location = new System.Drawing.Point(380, 271);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 28);
             this.label2.TabIndex = 5;
             this.label2.Text = "Contraseña";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(340, 84);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(206, 171);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
             // Login
             // 
+            this.AcceptButton = this.btnInicial;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Sistema_de_ventas.Properties.Resources.descarga__1_;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(873, 553);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textPassword);
@@ -139,10 +128,10 @@ namespace Sistema_de_ventas
             this.Controls.Add(this.btnInicial);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Login_FormClosed);
             this.Load += new System.EventHandler(this.Login_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,6 +145,5 @@ namespace Sistema_de_ventas
         private System.Windows.Forms.TextBox textPassword;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

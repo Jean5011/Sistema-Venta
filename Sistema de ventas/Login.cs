@@ -23,6 +23,7 @@ namespace Sistema_de_ventas
            // this.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
+        public static string codigo = "";
         private void btnInicial_Click(object sender, EventArgs e)
         {
             try
@@ -30,11 +31,15 @@ namespace Sistema_de_ventas
                 String validar = String.Format("select * from Usuarios where account='{0}' AND password = '{1}'", textUsuario.Text.Trim(), textPassword.Text.Trim());
 
                 DataSet conectar = Biblioteca.Herramientas(validar);
+
+                codigo = conectar.Tables[0].Rows[0]["id_usuario"].ToString().Trim();
                 string cuenta = conectar.Tables[0].Rows[0]["account"].ToString().Trim();
                 string contasena = conectar.Tables[0].Rows[0]["password"].ToString().Trim();
+
                 if(cuenta == textUsuario.Text.Trim() && contasena == textPassword.Text.Trim())
                 {
                     //MessageBox.Show("Se pudo conectar");
+                    ///si da true (1) es admin 
                     if (Convert.ToBoolean(conectar.Tables[0].Rows[0]["validar_admin"].ToString().Trim()))
                     {
                         Administrador admin = new Administrador();
