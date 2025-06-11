@@ -11,7 +11,7 @@ using LibreriaDLL;
 
 namespace Sistema_de_ventas
 {
-    public partial class Login : Form
+    public partial class Login : FormBase
     {
         public Login()
         {
@@ -67,7 +67,7 @@ namespace Sistema_de_ventas
 
         private void Login_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            
         }
     }
 }

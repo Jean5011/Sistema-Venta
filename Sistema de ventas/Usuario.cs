@@ -11,7 +11,7 @@ using LibreriaDLL;
 
 namespace Sistema_de_ventas
 {
-    public partial class Usuario : Form
+    public partial class Usuario : FormBase
     {
         public Usuario()
         {
@@ -43,6 +43,13 @@ namespace Sistema_de_ventas
         private void UserImagen_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ContenedorPrincipal con = new ContenedorPrincipal();
+            this.Hide();
+            con.Show();
         }
     }
 }

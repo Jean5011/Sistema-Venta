@@ -11,7 +11,7 @@ using LibreriaDLL;
 
 namespace Sistema_de_ventas
 {
-    public partial class Administrador : Form
+    public partial class Administrador : FormBase
     {
         public Administrador()
         {
@@ -44,6 +44,13 @@ namespace Sistema_de_ventas
         private void AdminImagen_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ContenedorPrincipal con = new ContenedorPrincipal();
+            this.Hide();
+            con.Show();
         }
     }
 }
