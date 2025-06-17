@@ -22,7 +22,7 @@ password nvarchar(50),
 Imagen VARCHAR(999),
 validar_admin bit
 )
-
+select * from Clientes
 /*
 insert into Usuarios(id_usuario,username,account,password,Imagen,validar_admin)
 select 1,'admin','admin123',123,'C:\Users\jeanp\Desktop\cursos\cursos\Aprende a programar desde cero con .NET, C# 11, Visual Studio 201922 y Git, conviértete en programador\curso\s22\Proyecto de sistema de ventas\Img User\admin\jp.jpeg', 1 union
@@ -39,3 +39,33 @@ SET username = 'Jean pierre Esquen'
 WHERE id_usuario=1
 
 DROP TABLE Usuarios;*/
+
+/*Procedimientos almacenados*/
+/*ActualizaProductos*/
+create procedure ActualizaProductos
+@id_producto int,@nombre_producto NVARCHAR(50),@precio float
+as
+if not exists(select id_producto from Articulos where id_producto=@id_producto)
+insert into Articulos(id_producto,nombre_producto,precio)values(@id_producto,@nombre_producto,@precio)
+else 
+update Articulos set id_producto=@id_producto,nombre_producto=@nombre_producto,precio=@precio
+/*Eliminar Productos*/
+create procedure EliminarProducto
+@id_productos int
+as delete from Articulos where id_producto=@id_productos
+/*Actualiza Cliente*/
+create procedure ActualizaClientes
+@id_cliente int,@nombre_cliente NVARCHAR(50),@apellido_cliente NVARCHAR(50)
+as
+if not exists(select id_cliente from Clientes where id_cliente=@id_cliente)
+insert into Clientes(id_cliente,nombre_cliente,apellido_cliente)values(@id_cliente,@nombre_cliente,@apellido_cliente)
+else 
+update Clientes set id_cliente=@id_cliente,nombre_cliente=@nombre_cliente,apellido_cliente=@apellido_cliente
+
+/*Eliminar Cliente*/
+create procedure EliminarCliente
+@id_cliente int
+as delete from Clientes where id_cliente=@id_cliente
+/*
+DROP PROCEDURE sp_ActualizarProducto;
+*/
