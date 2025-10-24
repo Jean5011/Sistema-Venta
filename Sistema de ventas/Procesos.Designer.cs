@@ -31,11 +31,16 @@ namespace Sistema_de_ventas
         {
             this.SuspendLayout();
             // 
+            // button1
+            // 
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Procesos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(933, 554);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Procesos";
             this.Text = "Procesos";
             this.Load += new System.EventHandler(this.Procesos_Load);

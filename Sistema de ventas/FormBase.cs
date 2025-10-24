@@ -27,7 +27,7 @@ namespace Sistema_de_ventas
 
         private void FormBase_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
         }
 
         public virtual void Eliminar() { }
@@ -38,7 +38,9 @@ namespace Sistema_de_ventas
             return false;
         }
 
+        private void FormBase_Load(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }

@@ -21,5 +21,10 @@ namespace Sistema_de_ventas
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

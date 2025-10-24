@@ -29,10 +29,16 @@ namespace Sistema_de_ventas
         /// </summary>
         private void InitializeComponent()
         {
-            this.textIdCliente = new System.Windows.Forms.TextBox();
-            this.textNombre = new System.Windows.Forms.TextBox();
-            this.textApellido = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MantenimientoCliente));
+            this.textIdCliente = new LibreriaDLL.errorTextBox();
+            this.textNombre = new LibreriaDLL.errorTextBox();
+            this.textApellido = new LibreriaDLL.errorTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnConsulta
+            // 
+            this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
             // 
             // label1
             // 
@@ -51,26 +57,38 @@ namespace Sistema_de_ventas
             this.label3.Size = new System.Drawing.Size(106, 28);
             this.label3.Text = "Apellido:";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.Icon = ((System.Drawing.Icon)(resources.GetObject("errorProvider1.Icon")));
+            this.errorProvider1.RightToLeft = true;
+            // 
             // textIdCliente
             // 
             this.textIdCliente.Location = new System.Drawing.Point(291, 154);
             this.textIdCliente.Name = "textIdCliente";
             this.textIdCliente.Size = new System.Drawing.Size(237, 22);
-            this.textIdCliente.TabIndex = 9;
+            this.textIdCliente.TabIndex = 12;
+            this.textIdCliente.Validar = true;
+            this.textIdCliente.ValidarNumeros = true;
+            this.textIdCliente.TextChanged += new System.EventHandler(this.textIdCliente_TextChanged);
             // 
             // textNombre
             // 
-            this.textNombre.Location = new System.Drawing.Point(291, 209);
+            this.textNombre.Location = new System.Drawing.Point(291, 216);
             this.textNombre.Name = "textNombre";
             this.textNombre.Size = new System.Drawing.Size(237, 22);
-            this.textNombre.TabIndex = 10;
+            this.textNombre.TabIndex = 13;
+            this.textNombre.Validar = true;
+            this.textNombre.ValidarNumeros = false;
             // 
             // textApellido
             // 
-            this.textApellido.Location = new System.Drawing.Point(291, 264);
+            this.textApellido.Location = new System.Drawing.Point(291, 270);
             this.textApellido.Name = "textApellido";
             this.textApellido.Size = new System.Drawing.Size(237, 22);
-            this.textApellido.TabIndex = 11;
+            this.textApellido.TabIndex = 14;
+            this.textApellido.Validar = true;
+            this.textApellido.ValidarNumeros = false;
             // 
             // MantenimientoCliente
             // 
@@ -95,6 +113,7 @@ namespace Sistema_de_ventas
             this.Controls.SetChildIndex(this.textIdCliente, 0);
             this.Controls.SetChildIndex(this.textNombre, 0);
             this.Controls.SetChildIndex(this.textApellido, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,8 +121,8 @@ namespace Sistema_de_ventas
 
         #endregion
 
-        private System.Windows.Forms.TextBox textIdCliente;
-        private System.Windows.Forms.TextBox textNombre;
-        private System.Windows.Forms.TextBox textApellido;
+        private LibreriaDLL.errorTextBox textIdCliente;
+        private LibreriaDLL.errorTextBox textNombre;
+        private LibreriaDLL.errorTextBox textApellido;
     }
 }

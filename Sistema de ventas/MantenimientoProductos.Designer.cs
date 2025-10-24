@@ -29,10 +29,15 @@ namespace Sistema_de_ventas
         /// </summary>
         private void InitializeComponent()
         {
-            this.textDescripcion = new System.Windows.Forms.TextBox();
-            this.textIdProducto = new System.Windows.Forms.TextBox();
-            this.textPrecio = new System.Windows.Forms.TextBox();
+            this.textIdProducto = new LibreriaDLL.errorTextBox();
+            this.textDescripcion = new LibreriaDLL.errorTextBox();
+            this.textPrecio = new LibreriaDLL.errorTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnConsulta
+            // 
+            this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
             // 
             // label1
             // 
@@ -50,27 +55,34 @@ namespace Sistema_de_ventas
             this.label3.Size = new System.Drawing.Size(84, 28);
             this.label3.Text = "Precio:";
             // 
-            // textDescripcion
-            // 
-            this.textDescripcion.Location = new System.Drawing.Point(292, 209);
-            this.textDescripcion.Multiline = true;
-            this.textDescripcion.Name = "textDescripcion";
-            this.textDescripcion.Size = new System.Drawing.Size(237, 83);
-            this.textDescripcion.TabIndex = 13;
-            // 
             // textIdProducto
             // 
-            this.textIdProducto.Location = new System.Drawing.Point(292, 152);
+            this.textIdProducto.Location = new System.Drawing.Point(298, 153);
             this.textIdProducto.Name = "textIdProducto";
-            this.textIdProducto.Size = new System.Drawing.Size(237, 22);
-            this.textIdProducto.TabIndex = 12;
+            this.textIdProducto.Size = new System.Drawing.Size(231, 22);
+            this.textIdProducto.TabIndex = 15;
+            this.textIdProducto.Validar = true;
+            this.textIdProducto.ValidarNumeros = true;
+            this.textIdProducto.TextChanged += new System.EventHandler(this.textIdProducto_TextChanged);
+            // 
+            // textDescripcion
+            // 
+            this.textDescripcion.Location = new System.Drawing.Point(298, 216);
+            this.textDescripcion.Multiline = true;
+            this.textDescripcion.Name = "textDescripcion";
+            this.textDescripcion.Size = new System.Drawing.Size(231, 63);
+            this.textDescripcion.TabIndex = 16;
+            this.textDescripcion.Validar = true;
+            this.textDescripcion.ValidarNumeros = false;
             // 
             // textPrecio
             // 
-            this.textPrecio.Location = new System.Drawing.Point(292, 298);
+            this.textPrecio.Location = new System.Drawing.Point(298, 305);
             this.textPrecio.Name = "textPrecio";
-            this.textPrecio.Size = new System.Drawing.Size(237, 22);
-            this.textPrecio.TabIndex = 14;
+            this.textPrecio.Size = new System.Drawing.Size(231, 22);
+            this.textPrecio.TabIndex = 17;
+            this.textPrecio.Validar = true;
+            this.textPrecio.ValidarNumeros = false;
             // 
             // MantenimientoProductos
             // 
@@ -84,6 +96,7 @@ namespace Sistema_de_ventas
             this.Name = "MantenimientoProductos";
             this.Text = "MantenimientoProductos";
             this.Load += new System.EventHandler(this.MantenimientoProductos_Load);
+            this.Controls.SetChildIndex(this.textIdProducto, 0);
             this.Controls.SetChildIndex(this.btnConsulta, 0);
             this.Controls.SetChildIndex(this.btnGuardar, 0);
             this.Controls.SetChildIndex(this.btnNuevo, 0);
@@ -92,17 +105,18 @@ namespace Sistema_de_ventas
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.label3, 0);
             this.Controls.SetChildIndex(this.button1, 0);
-            this.Controls.SetChildIndex(this.textIdProducto, 0);
             this.Controls.SetChildIndex(this.textDescripcion, 0);
             this.Controls.SetChildIndex(this.textPrecio, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textDescripcion;
-        private System.Windows.Forms.TextBox textIdProducto;
-        private System.Windows.Forms.TextBox textPrecio;
+
+        private LibreriaDLL.errorTextBox textIdProducto;
+        private LibreriaDLL.errorTextBox textDescripcion;
+        private LibreriaDLL.errorTextBox textPrecio;
     }
 }

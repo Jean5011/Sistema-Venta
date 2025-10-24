@@ -77,6 +77,7 @@ namespace Sistema_de_ventas
             this.textPassword.Location = new System.Drawing.Point(407, 393);
             this.textPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textPassword.Name = "textPassword";
+            this.textPassword.PasswordChar = '*';
             this.textPassword.Size = new System.Drawing.Size(240, 35);
             this.textPassword.TabIndex = 1;
             this.textPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

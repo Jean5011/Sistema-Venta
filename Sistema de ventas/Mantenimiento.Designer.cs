@@ -29,6 +29,7 @@ namespace Sistema_de_ventas
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mantenimiento));
             this.btnConsulta = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -38,13 +39,16 @@ namespace Sistema_de_ventas
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(791, 489);
             this.button1.Size = new System.Drawing.Size(130, 38);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnConsulta
             // 
@@ -140,6 +144,10 @@ namespace Sistema_de_ventas
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Mantenimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -167,6 +175,7 @@ namespace Sistema_de_ventas
             this.Controls.SetChildIndex(this.pictureBox1, 0);
             this.Controls.SetChildIndex(this.button1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,5 +191,6 @@ namespace Sistema_de_ventas
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

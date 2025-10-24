@@ -1,12 +1,101 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jeanp\\Desktop\\cursos\\cursos\\Aprende a programar desde cero con .NET, C# 11, Visual Studio 201922 y Git, convi\u00E9rtete en programador\\curso\\s22\\Proyecto de sistema de ventas\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\jeanp\\Desktop\\Proyec_estudio\\s22\\-Proyecto-Sistema-de-venta-\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A4E9153-D010-46C9-A0BC-FA99FB98A3A9}|Sistema de ventas\\Sistema de ventas.csproj|C:\\Users\\jeanp\\Desktop\\Proyec_estudio\\s22\\-Proyecto-Sistema-de-venta-\\sistema de ventas\\facturacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A4E9153-D010-46C9-A0BC-FA99FB98A3A9}|Sistema de ventas\\Sistema de ventas.csproj|solutionrelative:sistema de ventas\\facturacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A4E9153-D010-46C9-A0BC-FA99FB98A3A9}|Sistema de ventas\\Sistema de ventas.csproj|c:\\users\\jeanp\\desktop\\proyec_estudio\\s22\\-proyecto-sistema-de-venta-\\sistema de ventas\\facturacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A4E9153-D010-46C9-A0BC-FA99FB98A3A9}|Sistema de ventas\\Sistema de ventas.csproj|solutionrelative:sistema de ventas\\facturacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D158056-5664-4F24-A818-CA446FF76E1B}|Sistema de ventas\\LibreriaDLL\\LibreriaDLL.csproj|C:\\Users\\jeanp\\Desktop\\Proyec_estudio\\s22\\-Proyecto-Sistema-de-venta-\\sistema de ventas\\libreriadll\\biblioteca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D158056-5664-4F24-A818-CA446FF76E1B}|Sistema de ventas\\LibreriaDLL\\LibreriaDLL.csproj|solutionrelative:sistema de ventas\\libreriadll\\biblioteca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A4E9153-D010-46C9-A0BC-FA99FB98A3A9}|Sistema de ventas\\Sistema de ventas.csproj|C:\\Users\\jeanp\\Desktop\\Proyec_estudio\\s22\\-Proyecto-Sistema-de-venta-\\sistema de ventas\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A4E9153-D010-46C9-A0BC-FA99FB98A3A9}|Sistema de ventas\\Sistema de ventas.csproj|solutionrelative:sistema de ventas\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A4E9153-D010-46C9-A0BC-FA99FB98A3A9}|Sistema de ventas\\Sistema de ventas.csproj|C:\\Users\\jeanp\\Desktop\\Proyec_estudio\\s22\\-Proyecto-Sistema-de-venta-\\sistema de ventas\\formbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A4E9153-D010-46C9-A0BC-FA99FB98A3A9}|Sistema de ventas\\Sistema de ventas.csproj|solutionrelative:sistema de ventas\\formbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormBase.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\jeanp\\Desktop\\Proyec_estudio\\s22\\-Proyecto-Sistema-de-venta-\\Sistema de ventas\\FormBase.cs",
+              "RelativeDocumentMoniker": "Sistema de ventas\\FormBase.cs",
+              "ToolTip": "C:\\Users\\jeanp\\Desktop\\Proyec_estudio\\s22\\-Proyecto-Sistema-de-venta-\\Sistema de ventas\\FormBase.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Sistema de ventas\\FormBase.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T04:35:54.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Factura.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\jeanp\\Desktop\\Proyec_estudio\\s22\\-Proyecto-Sistema-de-venta-\\Sistema de ventas\\Factura.cs",
+              "RelativeDocumentMoniker": "Sistema de ventas\\Factura.cs",
+              "ToolTip": "C:\\Users\\jeanp\\Desktop\\Proyec_estudio\\s22\\-Proyecto-Sistema-de-venta-\\Sistema de ventas\\Factura.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Sistema de ventas\\Factura.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T04:34:19.464Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Biblioteca.cs",
+              "DocumentMoniker": "C:\\Users\\jeanp\\Desktop\\Proyec_estudio\\s22\\-Proyecto-Sistema-de-venta-\\Sistema de ventas\\LibreriaDLL\\Biblioteca.cs",
+              "RelativeDocumentMoniker": "Sistema de ventas\\LibreriaDLL\\Biblioteca.cs",
+              "ToolTip": "C:\\Users\\jeanp\\Desktop\\Proyec_estudio\\s22\\-Proyecto-Sistema-de-venta-\\Sistema de ventas\\LibreriaDLL\\Biblioteca.cs",
+              "RelativeToolTip": "Sistema de ventas\\LibreriaDLL\\Biblioteca.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T04:30:15.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Facturacion.cs",
+              "DocumentMoniker": "C:\\Users\\jeanp\\Desktop\\Proyec_estudio\\s22\\-Proyecto-Sistema-de-venta-\\Sistema de ventas\\Facturacion.cs",
+              "RelativeDocumentMoniker": "Sistema de ventas\\Facturacion.cs",
+              "ToolTip": "C:\\Users\\jeanp\\Desktop\\Proyec_estudio\\s22\\-Proyecto-Sistema-de-venta-\\Sistema de ventas\\Facturacion.cs",
+              "RelativeToolTip": "Sistema de ventas\\Facturacion.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAEwG4AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T03:40:59.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Facturacion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\jeanp\\Desktop\\Proyec_estudio\\s22\\-Proyecto-Sistema-de-venta-\\Sistema de ventas\\Facturacion.cs",
+              "RelativeDocumentMoniker": "Sistema de ventas\\Facturacion.cs",
+              "ToolTip": "C:\\Users\\jeanp\\Desktop\\Proyec_estudio\\s22\\-Proyecto-Sistema-de-venta-\\Sistema de ventas\\Facturacion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Sistema de ventas\\Facturacion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T03:40:54.657Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

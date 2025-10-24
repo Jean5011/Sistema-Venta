@@ -117,5 +117,26 @@ namespace Sistema_de_ventas
             productos.MdiParent = this;
             productos.Show();
         }
+
+        private void clientesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ConsultaClientes consulta = new ConsultaClientes(); 
+            consulta.MdiParent = this;
+            consulta.Show();
+        }
+
+        private void productosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ConsultaProductos consulta = new ConsultaProductos();
+            consulta.MdiParent = this;
+            consulta.Show();
+        }
+
+        private void facturacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Facturacion factu = new Facturacion();
+            factu.MdiParent = this;
+            factu.Show();
+        }
     }
 }
