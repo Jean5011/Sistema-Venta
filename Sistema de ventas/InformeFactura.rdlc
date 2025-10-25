@@ -22,8 +22,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>0.26141cm</Top>
-        <Left>0.47625cm</Left>
+        <Top>0.4225cm</Top>
+        <Left>0.3175cm</Left>
         <Height>1.60542cm</Height>
         <Width>10.02253cm</Width>
         <Style>
@@ -37,9 +37,9 @@
         </Style>
       </Textbox>
       <Line Name="Line1">
-        <Top>4.23016cm</Top>
+        <Top>4.65266cm</Top>
         <Height>0cm</Height>
-        <Width>18.49755cm</Width>
+        <Width>26.80547cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -53,7 +53,8 @@
         <Source>Embedded</Source>
         <Value>IcoVentanas</Value>
         <Sizing>FitProportional</Sizing>
-        <Left>13.05526cm</Left>
+        <Top>0.4225cm</Top>
+        <Left>21.36318cm</Left>
         <Height>3.7225cm</Height>
         <Width>5.44229cm</Width>
         <ZIndex>2</ZIndex>
@@ -108,8 +109,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox2</rd:DefaultName>
-        <Top>2.89016cm</Top>
-        <Left>0.47625cm</Left>
+        <Top>3.05125cm</Top>
+        <Left>0.3175cm</Left>
         <Height>0.9175cm</Height>
         <Width>1.89146cm</Width>
         <ZIndex>3</ZIndex>
@@ -181,7 +182,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox2</rd:DefaultName>
-        <Top>4.40655cm</Top>
+        <Top>5.22592cm</Top>
         <Height>0.9175cm</Height>
         <Width>4.7225cm</Width>
         <ZIndex>4</ZIndex>
@@ -227,7 +228,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox2</rd:DefaultName>
-        <Top>5.50071cm</Top>
+        <Top>6.32009cm</Top>
         <Height>0.9175cm</Height>
         <Width>5.17229cm</Width>
         <ZIndex>5</ZIndex>
@@ -286,8 +287,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox2</rd:DefaultName>
-        <Top>4.38009cm</Top>
-        <Left>9.66427cm</Left>
+        <Top>5.19946cm</Top>
+        <Left>13.76531cm</Left>
         <Height>0.9175cm</Height>
         <Width>3.135cm</Width>
         <ZIndex>6</ZIndex>
@@ -346,8 +347,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox2</rd:DefaultName>
-        <Top>1.93738cm</Top>
-        <Left>0.47625cm</Left>
+        <Top>2.09847cm</Top>
+        <Left>0.3175cm</Left>
         <Height>0.9175cm</Height>
         <Width>6.945cm</Width>
         <ZIndex>7</ZIndex>
@@ -406,7 +407,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox2</rd:DefaultName>
-        <Top>6.41821cm</Top>
+        <Top>7.23759cm</Top>
         <Height>0.9175cm</Height>
         <Width>5.17229cm</Width>
         <ZIndex>8</ZIndex>
@@ -438,8 +439,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>FachaFactura</rd:DefaultName>
-        <Top>2.92544cm</Top>
-        <Left>2.50882cm</Left>
+        <Top>3.08653cm</Top>
+        <Left>2.35007cm</Left>
         <Height>0.88222cm</Height>
         <Width>4.86269cm</Width>
         <ZIndex>9</ZIndex>
@@ -472,10 +473,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>NumeroFactura</rd:DefaultName>
-        <Top>4.38009cm</Top>
-        <Left>12.92838cm</Left>
+        <Top>5.19946cm</Top>
+        <Left>17.02942cm</Left>
         <Height>0.94424cm</Height>
-        <Width>5.56917cm</Width>
+        <Width>9.11459cm</Width>
         <ZIndex>10</ZIndex>
         <Style>
           <Border>
@@ -506,10 +507,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>CodigoCliente</rd:DefaultName>
-        <Top>4.40655cm</Top>
+        <Top>5.22592cm</Top>
         <Left>4.77224cm</Left>
         <Height>0.91778cm</Height>
-        <Width>4.89202cm</Width>
+        <Width>7.09401cm</Width>
         <ZIndex>11</ZIndex>
         <Style>
           <Border>
@@ -540,7 +541,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>nombre_cliente</rd:DefaultName>
-        <Top>5.50071cm</Top>
+        <Top>6.32009cm</Top>
         <Left>5.24849cm</Left>
         <Height>0.9084cm</Height>
         <Width>6.61776cm</Width>
@@ -574,7 +575,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>apellido_cliente</rd:DefaultName>
-        <Top>6.47967cm</Top>
+        <Top>7.29905cm</Top>
         <Left>5.30141cm</Left>
         <Height>0.88194cm</Height>
         <Width>6.56484cm</Width>
@@ -594,21 +595,21 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>4.53729cm</Width>
+              <Width>5.66759cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>5.25029cm</Width>
+              <Width>6.38059cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.405cm</Width>
+              <Width>5.5353cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.4525cm</Width>
+              <Width>4.5828cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.75875cm</Height>
+              <Height>1.98906cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -749,7 +750,7 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.81167cm</Height>
+              <Height>2.04198cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -906,10 +907,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>8.11953cm</Top>
-        <Left>0.47625cm</Left>
-        <Height>1.57042cm</Height>
-        <Width>17.64508cm</Width>
+        <Top>8.96536cm</Top>
+        <Left>2.62836cm</Left>
+        <Height>4.03104cm</Height>
+        <Width>22.16628cm</Width>
         <ZIndex>14</ZIndex>
         <Style>
           <Border>
@@ -918,7 +919,7 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>5.88542in</Height>
+    <Height>7.9375in</Height>
     <Style>
       <Border>
         <Style>Dashed</Style>
@@ -929,7 +930,7 @@
       </BackgroundImage>
     </Style>
   </Body>
-  <Width>7.2825in</Width>
+  <Width>10.55333in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>

@@ -1,6 +1,7 @@
-﻿namespace Sistema_de_ventas
+﻿
+namespace Sistema_de_ventas
 {
-    partial class Factura
+    partial class ventas
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +29,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.SuspendLayout();
             // 
-            // reportViewer1
+            // button1
             // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Sistema_de_ventas.InformeFactura.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(645, 643);
-            this.reportViewer1.TabIndex = 0;
+            this.button1.Location = new System.Drawing.Point(809, 601);
             // 
-            // Factura
+            // ventas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(645, 643);
-            this.Controls.Add(this.reportViewer1);
-            this.Name = "Factura";
-            this.Text = "Factura";
-            this.Load += new System.EventHandler(this.Factura_Load);
+            this.ClientSize = new System.Drawing.Size(933, 667);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Name = "ventas";
+            this.Text = "ventas";
+            this.Load += new System.EventHandler(this.ventas_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        public Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }

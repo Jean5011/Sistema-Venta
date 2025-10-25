@@ -427,7 +427,7 @@ namespace Sistema_de_ventas
             // facturacionToolStripMenuItem
             // 
             this.facturacionToolStripMenuItem.Name = "facturacionToolStripMenuItem";
-            this.facturacionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.facturacionToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.facturacionToolStripMenuItem.Text = "Facturacion";
             this.facturacionToolStripMenuItem.Click += new System.EventHandler(this.facturacionToolStripMenuItem_Click);
             // 
@@ -460,6 +460,7 @@ namespace Sistema_de_ventas
             this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
             this.ventasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ventasToolStripMenuItem.Text = "Ventas";
+            this.ventasToolStripMenuItem.Click += new System.EventHandler(this.ventasToolStripMenuItem_Click);
             // 
             // helpMenu
             // 

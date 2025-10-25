@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace Sistema_de_ventas
 {
-    public partial class Factura : Form
+    public partial class ventas : Procesos
     {
-        public Factura()
+        public ventas()
         {
             InitializeComponent();
         }
 
-        private void Factura_Load(object sender, EventArgs e)
+        private void ventas_Load(object sender, EventArgs e)
         {
 
-            this.reportViewer1.RefreshReport();
         }
     }
 }

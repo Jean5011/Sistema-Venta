@@ -171,88 +171,14 @@ namespace Sistema_de_ventas
 
         private void btnFactura_Click(object sender, EventArgs e)
         {
+            Console.WriteLine("7");
             if (ContadorFila != 0)
             {
                 try
                 {
                     string cmd = string.Format("Exec ActualizarFacturas '{0}'", txtCodigoCliente.Text.Trim());
                     DataSet DS = Biblioteca.Herramientas(cmd);
-
-                    if (DS.Tables.Count > 0 && DS.Tables[0].Rows.Count > 0)
-                    {
-                        if (DS.Tables[0].Columns.Contains("NumeroFactura"))
-                        {
-                            string NumeroFactura = DS.Tables[0].Rows[0]["NumeroFactura"].ToString().Trim();
-
-                            foreach (DataGridViewRow Fila in dataGridView1.Rows)
-                            {
-                                if (!Fila.IsNewRow)
-                                {
-                                    cmd = string.Format("Exec ActualizarDetalles '{0}','{1}','{2}','{3}'",
-                                                      NumeroFactura,
-                                                      Fila.Cells[0].Value?.ToString() ?? "",
-                                                      Fila.Cells[2].Value?.ToString() ?? "",
-                                                      Fila.Cells[3].Value?.ToString() ?? "");
-                                    DS = Biblioteca.Herramientas(cmd);
-                                }
-                            }
-
-                            // SOLUCIÓN: Agregar comillas alrededor del parámetro
-                            cmd = string.Format("Exec DatosFactura '{0}'", NumeroFactura);
-                            DS = Biblioteca.Herramientas(cmd);
-
-                            if (DS.Tables.Count > 0)
-                            {
-                                Factura fac = new Factura();
-                                fac.reportViewer1.LocalReport.DataSources[0].Value = DS.Tables[0];
-                                fac.ShowDialog();
-                                Nuevo();
-                            }
-                        }
-                    }
-                }
-                catch (Exception error)
-                {
-                    MessageBox.Show("Error: " + error.Message);
-                }
-            }
-            /*if (ContadorFila != 0)
-            {
-                try
-                {
-                    string cmd = string.Format("Exac ActualizarFacturas '{0}'", txtCodigoCliente.Text.Trim());
-                    DataSet ds = Biblioteca.Herramientas(cmd);
-                    string NumeroFactura = ds.Tables[0].Rows[0]["NumeroFactura"].ToString().Trim();
-                    foreach (DataGridViewRow Fila in dataGridView1.Rows)
-                    {
-                        cmd = string.Format("Exac ActualizarDetalles '{0}','{1}','{2}','{3}'", NumeroFactura, Fila.Cells[0].Value.ToString(), Fila.Cells[2].Value.ToString(), Fila.Cells[3].Value.ToString());
-                        ds = Biblioteca.Herramientas(cmd);
-                    }
-                    cmd = "Exec DatosFactura '" + NumeroFactura + "'";
-                    ds = Biblioteca.Herramientas(cmd);
-
-                    Factura fac = new Factura();
-                    fac.reportViewer1.LocalReport.DataSources[0].Value = ds.Tables[0];
-                    fac.ShowDialog();
-                    Nuevo();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error:" + ex.Message);
-                }
-            }*/
-
-            /*******//*
-            if (ContadorFila >= 0)
-            {
-                try
-                {
-                    string cmd = string.Format("Exec ActualizarFacturas '{0}'", txtCodigoCliente.Text.Trim());
-
-                    DataSet DS = Biblioteca.Herramientas(cmd);
-
                     string NumeroFactura = DS.Tables[0].Rows[0]["NumeroFactura"].ToString().Trim();
-
                     foreach (DataGridViewRow Fila in dataGridView1.Rows)
                     {
                         cmd = string.Format("Exec ActualizarDetalles '{0}','{1}','{2}','{3}'", NumeroFactura, Fila.Cells[0].Value.ToString(), Fila.Cells[2].Value.ToString(), Fila.Cells[3].Value.ToString());
@@ -262,20 +188,20 @@ namespace Sistema_de_ventas
 
                     DS = Biblioteca.Herramientas(cmd);
 
-                    Factura fac = new Factura();
-                    fac.reportViewer1.LocalReport.DataSources[0].Value = DS.Tables[0];
-                    fac.ShowDialog();
-
+                            
+                    GenerarFactura factura = new GenerarFactura();
+                    factura.Reporte.LocalReport.DataSources[0].Value = DS.Tables[0];
+                    factura.ShowDialog();
                     Nuevo();
+                            
 
+                  
                 }
-
                 catch (Exception error)
                 {
                     MessageBox.Show("Error: " + error.Message);
                 }
-            }*/
-
+            }
         }
     }
 }

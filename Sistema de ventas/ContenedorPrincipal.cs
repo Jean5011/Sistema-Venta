@@ -138,5 +138,10 @@ namespace Sistema_de_ventas
             factu.MdiParent = this;
             factu.Show();
         }
+
+        private void ventasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
