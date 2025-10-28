@@ -31,20 +31,30 @@ namespace Sistema_de_ventas
         {
             this.SuspendLayout();
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // label2
+            // 
+            this.label2.Size = new System.Drawing.Size(148, 50);
+            this.label2.Text = "Ventas";
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(809, 601);
+            this.button1.Location = new System.Drawing.Point(836, 492);
             // 
             // ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 667);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ClientSize = new System.Drawing.Size(1047, 667);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "ventas";
             this.Text = "ventas";
             this.Load += new System.EventHandler(this.ventas_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

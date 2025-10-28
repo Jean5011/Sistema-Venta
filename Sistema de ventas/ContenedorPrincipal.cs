@@ -141,7 +141,9 @@ namespace Sistema_de_ventas
 
         private void ventasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            ventas v = new ventas();
+            v.MdiParent = this;
+            v.Show();
         }
     }
 }

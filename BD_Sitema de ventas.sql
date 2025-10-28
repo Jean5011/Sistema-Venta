@@ -39,7 +39,7 @@ CodigoCliente int
 )
 
 exec ActualizaProductos 1,'qww',1223
-select * from Clientes
+select * from Facturas
 /*
 insert into Usuarios(id_usuario,username,account,password,Imagen,validar_admin)
 select 1,'admin','admin123',123,'C:\Users\jeanp\Desktop\cursos\cursos\Aprende a programar desde cero con .NET, C# 11, Visual Studio 201922 y Git, conviértete en programador\curso\s22\Proyecto de sistema de ventas\Img User\admin\jp.jpeg', 1 union

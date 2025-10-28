@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LibreriaDLL;
 
 namespace Sistema_de_ventas
 {
-    public partial class ventas : Procesos
+    public partial class ventas : Consulta
     {
         public ventas()
         {
@@ -19,7 +20,21 @@ namespace Sistema_de_ventas
 
         private void ventas_Load(object sender, EventArgs e)
         {
+            dataGridView1.DataSource = MostrarInFoDG("Facturas").Tables[0];
+        }
 
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string buscar = "Select * from Facturas where NumeroFactura = " + textBox1.Text.Trim() + "";
+                DataSet ds = Biblioteca.Herramientas(buscar);
+                dataGridView1.DataSource = ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se puede conectar, error", ex.Message);
+            }
         }
     }
 }
